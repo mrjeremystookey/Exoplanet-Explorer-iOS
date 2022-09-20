@@ -6,16 +6,23 @@
 //
 
 import SwiftUI
+import Network
 
-struct ContentView: View {
+struct GraphView: View {
     var body: some View {
+        
+        
         Text("Hello, world!")
             .padding()
+        
+//        Text("Is this coding iOS apps?")
+//
+//        Text(UrlConstants.ALL_PLANETS_URL)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GraphView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GraphView()
     }
 }
