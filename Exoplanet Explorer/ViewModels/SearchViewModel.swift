@@ -6,4 +6,20 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+
+class SearchViewModel: ObservableObject {
+    @Published var planets: [Planet] = []
+    @Published var jsonString = JSON("Test String")
+    
+    var repository = PlanetRepository()
+
+    
+    func fetchPlanetsFromNetwork(){
+        var planetJson = repository.fetchPlanetsFromNetwork()
+    }
+
+    
+}
 

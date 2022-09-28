@@ -25,6 +25,12 @@ struct UrlConstants{
     "pl_orbeccen_reflink, pl_insol, pl_insol_reflink," +
     "pl_eqt"
     
+    static let testParameters = "hostname,pl_orbper,pl_letter,disc_year"
+    
+    
+    static let TEST_URL =            "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+distinct(pl_name),"+testParameters+"%20from+%20pscomppars+order+by+pl_name+asc+&format=json"
+
+    
     static let ALL_PLANETS_URL =            "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+distinct(pl_name),"+PARAMETERS+"%20from+%20pscomppars+order+by+pl_name+asc+&format=json"
 
 }

@@ -1,26 +1,42 @@
-//
-//  File.swift
-//  Exoplanet Explorer
-//
-//  Created by Jeremy Stookey on 9/20/22.
-//
-
-import Foundation
 import SwiftUI
-import Network
 
 struct SearchView: View {
+    @StateObject var viewModel = SearchViewModel()
+
+    let planets: [Planet]
     var body: some View {
         
-        
-        Text("Hello, world!")
-            .padding()
-        
+        VStack{
+            List{
+                ForEach(planets, id: \.planetName) { planet in
+                    NavigationLink(destination: PlanetDetailsView(planet: planet)) {
+                        PlanetCardView(planet: planet)
+                            .padding(4)
+                    }
+                    .listRowBackground(Color.cyan)
+                }
+            }
+            .navigationTitle("Planets")
+            .onAppear{
+                viewModel.fetchPlanetsFromNetwork()
+            }
+            .toolbar {
+                          Button(action: {}) {
+                              Image(systemName: "plus")
+                          }
+                          .accessibilityLabel("Search Planets")
+                      }
+        }
+
     }
 }
 
+
+
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        NavigationView{
+            SearchView(planets: Planet.sampleData)
+        }
     }
 }

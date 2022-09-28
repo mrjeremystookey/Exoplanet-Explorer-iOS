@@ -11,13 +11,9 @@ import Network
 struct GraphView: View {
     var body: some View {
         
-        
-        Text("Hello, world!")
+        Text("PLOT PLOT PLOT ")
             .padding()
         
-//        Text("Is this coding iOS apps?")
-//
-//        Text(UrlConstants.ALL_PLANETS_URL)
     }
 }
 

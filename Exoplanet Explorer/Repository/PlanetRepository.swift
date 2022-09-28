@@ -6,38 +6,42 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 
-protocol PlanetRepositoryProtocol {
-    func fetchAllPlanetsFromCache(completion: (Planet) -> Void)
-
-}
 
 
 class PlanetRepository {
-    func callAPI(){
-        let defaultSession = URLSession(configuration: .default)
-        var dataTask: URLSessionDataTask?
-        dataTask?.cancel()
-        dataTask = defaultSession.dataTask(with: URL(string: UrlConstants.ALL_PLANETS_URL)!){
-            [weak self] data, response, error in
-            defer {
-                self?.dataTask = nil
-                if let error = error {
-                    self?.errorMessage += "dataTask Error: " + error.localizedDescription + "\n"
-                    
-                } else if
-                    let data = data,
-                    let response = response as? HTTPURLResponse,
-                    response.statusCode == 200{
-                    self?.updateSearchResults(data)
-                    DispatchQueue.main.async {
-                        completion(self?.tracks, self?.errorMessage ?? "")
-                    }
-                }
-            }
-            dataTask?.resume()
-        }
+    
+    var apiService = ExoplanetApiService()
+    var planetMapper = JsonPlanetMapper()
+
+    
+    func fetchPlanetsFromNetwork() {
+        let jsonPlanetString = apiService.fetchPlanetsFromNetwork()
+        convertJsonToPlanets(json: jsonPlanetString)
     }
+    
+    private func convertJsonToPlanets(json: JSON){
+        var planetList = planetMapper.convertJsonToPlanets(json: json)
+    }
+    
+    func checkAndInsertPlanetIntoCache(){
+        
+    }
+    
+    func searchPlanetsFromCache(){
+        
+    }
+    
+    func getAllPlanetsFromCache(){
+        
+    }
+    
+    func removePlanetsFromCache(){
+        
+    }
+    
+    
 }
 

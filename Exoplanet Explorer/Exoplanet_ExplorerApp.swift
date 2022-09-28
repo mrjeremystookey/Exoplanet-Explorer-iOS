@@ -11,7 +11,9 @@ import SwiftUI
 struct Exoplanet_ExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            NavigationView{
+                SearchView(planets: Planet.sampleData)
+            }
         }
     }
 }
