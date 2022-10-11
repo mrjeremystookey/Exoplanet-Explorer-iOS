@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F316A3028F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A2E28F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld */; };
+		3F316A3528F51769005FC00C /* PlanetPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A3428F51769005FC00C /* PlanetPersistence.swift */; };
 		3F3C2C0E28DE40BB0043964F /* ExoplanetExplorerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */; };
 		3F3C2C1028DE420A0043964F /* PlanetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2C0F28DE420A0043964F /* PlanetCardView.swift */; };
 		3F3C2C1228DE4D550043964F /* PlanetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2C1128DE4D550043964F /* PlanetDetailsView.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F316A2F28F511A8005FC00C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3F316A3428F51769005FC00C /* PlanetPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPersistence.swift; sourceTree = "<group>"; };
 		3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetExplorerTheme.swift; sourceTree = "<group>"; };
 		3F3C2C0F28DE420A0043964F /* PlanetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardView.swift; sourceTree = "<group>"; };
 		3F3C2C1128DE4D550043964F /* PlanetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailsView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		3F316A3628F51854005FC00C /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				3F316A2E28F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld */,
+				3F316A3428F51769005FC00C /* PlanetPersistence.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		3FD07A4028D4B63D00E9DBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 		3FD07A4B28D4B63D00E9DBC7 /* Exoplanet Explorer */ = {
 			isa = PBXGroup;
 			children = (
+				3F316A3628F51854005FC00C /* Cache */,
 				3FD07A4C28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift */,
 				3F316A2B28F50DA5005FC00C /* Repository */,
 				3F316A2A28F50D94005FC00C /* Util */,
@@ -217,12 +231,14 @@
 				3F7FFF6628E4DFDB00EBB247 /* JsonPlanetMapper.swift in Sources */,
 				3FD07A7728D5238A00E9DBC7 /* ExoplanetApiService.swift in Sources */,
 				3FD07A8828D57BD200E9DBC7 /* PlanetRepository.swift in Sources */,
+				3F316A3528F51769005FC00C /* PlanetPersistence.swift in Sources */,
 				3F3C2C1228DE4D550043964F /* PlanetDetailsView.swift in Sources */,
 				3FD07A4D28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift in Sources */,
 				3FF4B5E028DA5D77003FCF0E /* PlanetListView.swift in Sources */,
 				3F3C2C0E28DE40BB0043964F /* ExoplanetExplorerTheme.swift in Sources */,
 				3FD07A7B28D523DD00E9DBC7 /* Planet.swift in Sources */,
 				3F3C2C1028DE420A0043964F /* PlanetCardView.swift in Sources */,
+				3F316A3028F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,19 @@
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3F316A2E28F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F316A2F28F511A8005FC00C /* Model.xcdatamodel */,
+			);
+			currentVersion = 3F316A2F28F511A8005FC00C /* Model.xcdatamodel */;
+			path = PlanetCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FD07A4128D4B63D00E9DBC7 /* Project object */;
 }

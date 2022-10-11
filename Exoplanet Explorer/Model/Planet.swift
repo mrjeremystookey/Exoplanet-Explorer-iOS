@@ -65,14 +65,6 @@ struct Planet {
 
 }
 
-enum CodingKeys: String, CodingKey {
-    case planetName = "pl_name"
-    case planetLetter = "pl_letter"
-    case hostname = "hostname"
-    case discoveryYear = "disc_year"
-    case planetaryOrbitPeriod = "pl_orbper"
-}
-
 extension Planet {
     static let sampleData: [Planet] =
     [
