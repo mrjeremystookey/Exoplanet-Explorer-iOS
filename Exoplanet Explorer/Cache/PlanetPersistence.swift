@@ -23,7 +23,7 @@ struct PlanetPersistenceController {
     let container: NSPersistentContainer
     
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "CoreDataDemo")
+        container = NSPersistentContainer(name: "PlanetCoreDataModel")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

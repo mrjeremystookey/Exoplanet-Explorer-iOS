@@ -6,8 +6,7 @@ struct PlanetListView: View {
 
     let planets: [Planet]
     var body: some View {
-        
-        ZStack{
+        ZStack {
             if viewModel.isRefreshing {
                 ProgressView()
             } else {
