@@ -13,39 +13,31 @@
 		3F7FFF6428E39F6A00EBB247 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7FFF6328E39F6A00EBB247 /* SwiftyJSON */; };
 		3F7FFF6628E4DFDB00EBB247 /* JsonPlanetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FFF6528E4DFDB00EBB247 /* JsonPlanetMapper.swift */; };
 		3FD07A4D28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A4C28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift */; };
-		3FD07A4F28D4B63D00E9DBC7 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A4E28D4B63D00E9DBC7 /* GraphView.swift */; };
 		3FD07A5128D4B63F00E9DBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD07A5028D4B63F00E9DBC7 /* Assets.xcassets */; };
 		3FD07A5428D4B63F00E9DBC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD07A5328D4B63F00E9DBC7 /* Preview Assets.xcassets */; };
 		3FD07A7728D5238A00E9DBC7 /* ExoplanetApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A7628D5238A00E9DBC7 /* ExoplanetApiService.swift */; };
 		3FD07A7B28D523DD00E9DBC7 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A7A28D523DD00E9DBC7 /* Planet.swift */; };
 		3FD07A7D28D523FA00E9DBC7 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A7C28D523FA00E9DBC7 /* URLs.swift */; };
-		3FD07A8028D5242E00E9DBC7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A7F28D5242E00E9DBC7 /* SearchViewModel.swift */; };
+		3FD07A8028D5242E00E9DBC7 /* PlanetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A7F28D5242E00E9DBC7 /* PlanetListViewModel.swift */; };
 		3FD07A8828D57BD200E9DBC7 /* PlanetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A8728D57BD200E9DBC7 /* PlanetRepository.swift */; };
-		3FD07A8F28D57C4600E9DBC7 /* PlanetDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD07A8E28D57C4600E9DBC7 /* PlanetDatabase.swift */; };
-		3FF4B5E028DA5D77003FCF0E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B5DF28DA5D77003FCF0E /* SearchView.swift */; };
-		3FF4B5E228DA5E88003FCF0E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B5E128DA5E88003FCF0E /* Graph.swift */; };
-		3FF4B5E528DA5EC8003FCF0E /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B5E428DA5EC8003FCF0E /* GraphViewModel.swift */; };
+		3FF4B5E028DA5D77003FCF0E /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B5DF28DA5D77003FCF0E /* PlanetListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExoplanetExplorerTheme.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/Models/ExoplanetExplorerTheme.swift"; sourceTree = "<group>"; };
-		3F3C2C0F28DE420A0043964F /* PlanetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanetCardView.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/Views/PlanetCardView.swift"; sourceTree = "<group>"; };
-		3F3C2C1128DE4D550043964F /* PlanetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanetDetailsView.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/Views/PlanetDetailsView.swift"; sourceTree = "<group>"; };
-		3F7FFF6528E4DFDB00EBB247 /* JsonPlanetMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JsonPlanetMapper.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/Util/JsonPlanetMapper.swift"; sourceTree = "<group>"; };
+		3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetExplorerTheme.swift; sourceTree = "<group>"; };
+		3F3C2C0F28DE420A0043964F /* PlanetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardView.swift; sourceTree = "<group>"; };
+		3F3C2C1128DE4D550043964F /* PlanetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailsView.swift; sourceTree = "<group>"; };
+		3F7FFF6528E4DFDB00EBB247 /* JsonPlanetMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlanetMapper.swift; sourceTree = "<group>"; };
 		3FD07A4928D4B63D00E9DBC7 /* Exoplanet Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exoplanet Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD07A4C28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exoplanet_ExplorerApp.swift; sourceTree = "<group>"; };
-		3FD07A4E28D4B63D00E9DBC7 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		3FD07A5028D4B63F00E9DBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD07A5328D4B63F00E9DBC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FD07A7628D5238A00E9DBC7 /* ExoplanetApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetApiService.swift; sourceTree = "<group>"; };
 		3FD07A7A28D523DD00E9DBC7 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		3FD07A7C28D523FA00E9DBC7 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		3FD07A7F28D5242E00E9DBC7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		3FD07A7F28D5242E00E9DBC7 /* PlanetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewModel.swift; sourceTree = "<group>"; };
 		3FD07A8728D57BD200E9DBC7 /* PlanetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRepository.swift; sourceTree = "<group>"; };
-		3FD07A8E28D57C4600E9DBC7 /* PlanetDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDatabase.swift; sourceTree = "<group>"; };
-		3FF4B5DF28DA5D77003FCF0E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		3FF4B5E128DA5E88003FCF0E /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/Domain/Graph.swift"; sourceTree = "<group>"; };
-		3FF4B5E428DA5EC8003FCF0E /* GraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GraphViewModel.swift; path = "../../../../../../Jeremy/Development/iOSProjects/Exoplanet Explorer/Exoplanet Explorer/ViewModels/GraphViewModel.swift"; sourceTree = "<group>"; };
+		3FF4B5DF28DA5D77003FCF0E /* PlanetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,31 +52,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F3C2C0C28DE40AD0043964F /* Models */ = {
+		3F316A2728F50CBE005FC00C /* PlanetView */ = {
 			isa = PBXGroup;
 			children = (
-				3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3FA84A6C28D8EE5C00A66560 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3FF4B5DF28DA5D77003FCF0E /* SearchView.swift */,
-				3FD07A4E28D4B63D00E9DBC7 /* GraphView.swift */,
+				3FD07A7F28D5242E00E9DBC7 /* PlanetListViewModel.swift */,
+				3FF4B5DF28DA5D77003FCF0E /* PlanetListView.swift */,
 				3F3C2C0F28DE420A0043964F /* PlanetCardView.swift */,
 				3F3C2C1128DE4D550043964F /* PlanetDetailsView.swift */,
 			);
-			path = Views;
+			path = PlanetView;
 			sourceTree = "<group>";
 		};
-		3FA84A6D28D8F00200A66560 /* Services */ = {
+		3F316A2828F50D73005FC00C /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				3FD07A7628D5238A00E9DBC7 /* ExoplanetApiService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3F316A2928F50D81005FC00C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FD07A7A28D523DD00E9DBC7 /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F316A2A28F50D94005FC00C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */,
+				3FD07A7C28D523FA00E9DBC7 /* URLs.swift */,
+				3F7FFF6528E4DFDB00EBB247 /* JsonPlanetMapper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3F316A2B28F50DA5005FC00C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3FD07A8728D57BD200E9DBC7 /* PlanetRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		3FD07A4028D4B63D00E9DBC7 = {
@@ -106,15 +116,12 @@
 		3FD07A4B28D4B63D00E9DBC7 /* Exoplanet Explorer */ = {
 			isa = PBXGroup;
 			children = (
-				3F3C2C0C28DE40AD0043964F /* Models */,
-				3FA84A6D28D8F00200A66560 /* Services */,
-				3FA84A6C28D8EE5C00A66560 /* Views */,
-				3FD07A8D28D57C2E00E9DBC7 /* Cache */,
-				3FD07A8628D57BC000E9DBC7 /* Repository */,
-				3FD07A8128D57B4300E9DBC7 /* Util */,
-				3FD07A7E28D5241700E9DBC7 /* ViewModels */,
-				3FD07A7928D523C300E9DBC7 /* Domain */,
 				3FD07A4C28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift */,
+				3F316A2B28F50DA5005FC00C /* Repository */,
+				3F316A2A28F50D94005FC00C /* Util */,
+				3F316A2928F50D81005FC00C /* Model */,
+				3F316A2828F50D73005FC00C /* Services */,
+				3F316A2728F50CBE005FC00C /* PlanetView */,
 				3FD07A5028D4B63F00E9DBC7 /* Assets.xcassets */,
 				3FD07A5228D4B63F00E9DBC7 /* Preview Content */,
 			);
@@ -127,49 +134,6 @@
 				3FD07A5328D4B63F00E9DBC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3FD07A7928D523C300E9DBC7 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				3FD07A7A28D523DD00E9DBC7 /* Planet.swift */,
-				3FF4B5E128DA5E88003FCF0E /* Graph.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		3FD07A7E28D5241700E9DBC7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				3FD07A7F28D5242E00E9DBC7 /* SearchViewModel.swift */,
-				3FF4B5E428DA5EC8003FCF0E /* GraphViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		3FD07A8128D57B4300E9DBC7 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				3FD07A7C28D523FA00E9DBC7 /* URLs.swift */,
-				3F7FFF6528E4DFDB00EBB247 /* JsonPlanetMapper.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		3FD07A8628D57BC000E9DBC7 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				3FD07A8728D57BD200E9DBC7 /* PlanetRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		3FD07A8D28D57C2E00E9DBC7 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				3FD07A8E28D57C4600E9DBC7 /* PlanetDatabase.swift */,
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,21 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF4B5E228DA5E88003FCF0E /* Graph.swift in Sources */,
-				3FD07A8028D5242E00E9DBC7 /* SearchViewModel.swift in Sources */,
+				3FD07A8028D5242E00E9DBC7 /* PlanetListViewModel.swift in Sources */,
 				3FD07A7D28D523FA00E9DBC7 /* URLs.swift in Sources */,
-				3FD07A8F28D57C4600E9DBC7 /* PlanetDatabase.swift in Sources */,
 				3F7FFF6628E4DFDB00EBB247 /* JsonPlanetMapper.swift in Sources */,
 				3FD07A7728D5238A00E9DBC7 /* ExoplanetApiService.swift in Sources */,
 				3FD07A8828D57BD200E9DBC7 /* PlanetRepository.swift in Sources */,
 				3F3C2C1228DE4D550043964F /* PlanetDetailsView.swift in Sources */,
-				3FD07A4F28D4B63D00E9DBC7 /* GraphView.swift in Sources */,
 				3FD07A4D28D4B63D00E9DBC7 /* Exoplanet_ExplorerApp.swift in Sources */,
-				3FF4B5E028DA5D77003FCF0E /* SearchView.swift in Sources */,
+				3FF4B5E028DA5D77003FCF0E /* PlanetListView.swift in Sources */,
 				3F3C2C0E28DE40BB0043964F /* ExoplanetExplorerTheme.swift in Sources */,
 				3FD07A7B28D523DD00E9DBC7 /* Planet.swift in Sources */,
 				3F3C2C1028DE420A0043964F /* PlanetCardView.swift in Sources */,
-				3FF4B5E528DA5EC8003FCF0E /* GraphViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

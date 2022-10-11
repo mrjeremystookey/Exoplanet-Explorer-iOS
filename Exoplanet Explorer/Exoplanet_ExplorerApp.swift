@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct Exoplanet_ExplorerApp: App {
+    
+    
+    @StateObject private var viewModel = PlanetListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                SearchView(planets: Planet.sampleData)
+                PlanetListView(planets: viewModel.planets)
             }
         }
     }

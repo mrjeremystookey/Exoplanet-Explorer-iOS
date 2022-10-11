@@ -1,47 +1,34 @@
-//
-//  PlanetRepository.swift
-//  Exoplanet Explorer
-//
-//  Created by Jeremy Stookey on 9/16/22.
-//
-
 import Foundation
 import SwiftyJSON
 
-
-
-
 class PlanetRepository {
     
+    //Needs to be injected via DI
     var apiService = ExoplanetApiService()
-    var planetMapper = JsonPlanetMapper()
+    
 
-    
-    func fetchPlanetsFromNetwork() {
-        let jsonPlanetString = apiService.fetchPlanetsFromNetwork()
-        convertJsonToPlanets(json: jsonPlanetString)
-    }
-    
-    private func convertJsonToPlanets(json: JSON){
-        var planetList = planetMapper.convertJsonToPlanets(json: json)
-    }
-    
-    func checkAndInsertPlanetIntoCache(){
-        
-    }
-    
-    func searchPlanetsFromCache(){
-        
-    }
-    
-    func getAllPlanetsFromCache(){
-        
-    }
-    
-    func removePlanetsFromCache(){
-        
+    init() {
+        print("PlanetRepository initialized")
     }
     
     
+    func fetchPlanetsFromNetwork() async -> [Planet] {
+        let planets = await apiService.fetchPlanetsFromNetwork()
+        print("PlanetRepository: # of planets: \(planets.count)")
+        return planets
+    }
+    
+    
+    //Retrieves all local planets saved to Datastore
+    func getPlanetsFromLocalCache() -> [Planet] {
+//        var planetPersistence = PlanetPersistence.init(inMemory: true)
+//        var container = planetPersistence.container
+        return []
+    }
+    
+    //Checks if Planets have already been cached, if not, adds them to cache
+    private func checkAndInsertPlanetIntoLocalCache(planetList: [Planet]) {
+        print("updating local cache")
+    }
 }
 

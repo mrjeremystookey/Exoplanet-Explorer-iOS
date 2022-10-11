@@ -1,21 +1,30 @@
-//
-//  ExoplanetApiService.swift
-//  Exoplanet Explorer
-//
-//  Created by Jeremy Stookey on 9/16/22.
-//
-
 import Foundation
+import SwiftyJSON
 
 
 //Class to retrieve JSON from Caltech API service
-
-protocol ExoplanetApiServiceProtocol{
-    func fetchPlanetsFromNetwork(completion: (Planet) -> Void)
-}
-
-class ExoplanetApiService{
-    func fetchPlanetsFromNetwork(completion: (Planet) -> Void){
+struct ExoplanetApiService {
         
+    //Needs to be injected via DI
+    var planetMapper = JsonPlanetMapper()
+    
+    init() {
+        print("ExoplanetApiService initialized")
     }
+
+        func fetchPlanetsFromNetwork() async -> [Planet] {
+            print("fetching new planets from API")
+            let url = URL(string: UrlConstants.TEST_URL)!.absoluteURL
+            do {
+                let (data, _) = try await URLSession.shared.data(from: url)
+                let planetsJson = try JSON(data: data)
+                let planetsList = planetMapper.convertJsonToPlanets(json: planetsJson)
+                print("ExoplanetApiService: # of planets: \(planetsJson.count)")
+                return planetsList
+            } catch{
+                print(error)
+            }
+            return []
+        }
 }
+

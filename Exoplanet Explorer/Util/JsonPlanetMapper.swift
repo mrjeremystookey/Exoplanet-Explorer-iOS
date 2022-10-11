@@ -1,21 +1,28 @@
-//
-//  JsonPlanetMapper.swift
-//  Exoplanet Explorer
-//
-//  Created by Jeremy Stookey on 9/28/22.
-//
-
 import Foundation
 import SwiftyJSON
 
 
 class JsonPlanetMapper {
     
-    
-    func convertJsonToPlanets(json: JSON) -> [String] {
-        print("creating \(json.count) Planet objects will return List of Planets")
-        return ["mappedPlanets"]
+    init() {
+        print("JsonPlanetMapper initialized")
     }
     
+    func convertJsonToPlanets(json: JSON) -> [Planet] {
+        var planetList = Array<Planet>()
+        json.forEach { planet in
+            //Use new Planet NSManagedObject class here 
+            let planet = Planet(
+                planetId: Int.init(planet.0.description)!,
+                planetName: planet.1["pl_name"].stringValue,
+                hostname: planet.1["hostname"].stringValue,
+                discoveryYear: planet.1["disc_year"].stringValue,
+                planetaryOrbitPeriod: planet.1["pl_orbper"].doubleValue
+            )
+            planetList.append(planet)
+        }
+        print("JsonPlanetMapper: \(planetList.count) new Planet objects created")
+        return planetList
+    }
     
 }
