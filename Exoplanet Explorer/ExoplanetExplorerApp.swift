@@ -2,14 +2,15 @@ import SwiftUI
 
 @main
 struct ExoplanetExplorerApp: App {
+        
+//    @StateObject private var dataController = PlanetPersistenceController()
     
-    
-    @StateObject private var viewModel = PlanetListViewModel()
     
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                PlanetListView(planets: viewModel.planets)
+                PlanetListView()
+//                    .environment(\.managedObjectContext, dataController.container.viewContext)
             }
         }
     }

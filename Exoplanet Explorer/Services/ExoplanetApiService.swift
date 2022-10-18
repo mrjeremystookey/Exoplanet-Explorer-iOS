@@ -16,6 +16,7 @@ struct ExoplanetApiService {
             print("fetching new planets from API")
             let url = URL(string: UrlConstants.TEST_URL)!.absoluteURL
             do {
+                //Need to handle response abd error 
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let planetsJson = try JSON(data: data)
                 let planetsList = planetMapper.convertJsonToPlanets(json: planetsJson)

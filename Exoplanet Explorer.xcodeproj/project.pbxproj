@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F316A3028F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A2E28F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld */; };
-		3F316A3528F51769005FC00C /* PlanetPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A3428F51769005FC00C /* PlanetPersistence.swift */; };
+		3F316A3528F51769005FC00C /* PlanetPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A3428F51769005FC00C /* PlanetPersistenceController.swift */; };
 		3F316A3928F51F10005FC00C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A3828F51F10005FC00C /* GraphView.swift */; };
 		3F316A3B28F5210F005FC00C /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F316A3A28F5210F005FC00C /* GraphViewModel.swift */; };
 		3F3C2C0E28DE40BB0043964F /* ExoplanetExplorerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3F316A2F28F511A8005FC00C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		3F316A3428F51769005FC00C /* PlanetPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPersistence.swift; sourceTree = "<group>"; };
+		3F316A3428F51769005FC00C /* PlanetPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPersistenceController.swift; sourceTree = "<group>"; };
 		3F316A3828F51F10005FC00C /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		3F316A3A28F5210F005FC00C /* GraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewModel.swift; sourceTree = "<group>"; };
 		3F3C2C0D28DE40BB0043964F /* ExoplanetExplorerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetExplorerTheme.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3F316A2E28F511A8005FC00C /* PlanetCoreDataModel.xcdatamodeld */,
-				3F316A3428F51769005FC00C /* PlanetPersistence.swift */,
+				3F316A3428F51769005FC00C /* PlanetPersistenceController.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -148,8 +148,8 @@
 				3F316A2A28F50D94005FC00C /* Util */,
 				3F316A2928F50D81005FC00C /* Model */,
 				3F316A2828F50D73005FC00C /* Services */,
-				3F316A3728F51EB6005FC00C /* Graphs */,
 				3F316A2728F50CBE005FC00C /* Planets */,
+				3F316A3728F51EB6005FC00C /* Graphs */,
 				3FD07A5028D4B63F00E9DBC7 /* Assets.xcassets */,
 				3FD07A5228D4B63F00E9DBC7 /* Preview Content */,
 			);
@@ -246,7 +246,7 @@
 				3FD07A7728D5238A00E9DBC7 /* ExoplanetApiService.swift in Sources */,
 				3FD07A8828D57BD200E9DBC7 /* PlanetRepository.swift in Sources */,
 				3F316A3B28F5210F005FC00C /* GraphViewModel.swift in Sources */,
-				3F316A3528F51769005FC00C /* PlanetPersistence.swift in Sources */,
+				3F316A3528F51769005FC00C /* PlanetPersistenceController.swift in Sources */,
 				3F3C2C1228DE4D550043964F /* PlanetDetailsView.swift in Sources */,
 				3FD07A4D28D4B63D00E9DBC7 /* ExoplanetExplorerApp.swift in Sources */,
 				3FF4B5E028DA5D77003FCF0E /* PlanetListView.swift in Sources */,

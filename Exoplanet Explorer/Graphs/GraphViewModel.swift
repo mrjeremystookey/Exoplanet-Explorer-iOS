@@ -7,10 +7,12 @@
 
 import Foundation
 
-final class GraphViewModel: ObservableObject {
-    
-    
-    init() {
-        print("SearchViewModel initialized")
+extension GraphView {
+   @MainActor final class GraphViewModel: ObservableObject {
+        
+        
+        init() {
+            print("GraphViewModel initialized")
+        }
     }
 }

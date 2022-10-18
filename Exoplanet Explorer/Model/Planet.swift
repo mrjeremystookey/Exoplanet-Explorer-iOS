@@ -12,7 +12,7 @@ struct Planet {
     var planetId: Int
     var planetName: String
     var hostname: String
-    var discoveryYear: String
+    var discoveryYear: Int
     var planetaryOrbitPeriod: Double? = nil
 
     
@@ -68,7 +68,7 @@ struct Planet {
 extension Planet {
     static let sampleData: [Planet] =
     [
-        Planet(planetId: 1, planetName: "Wasp-96b", hostname: "Wasp Nest", discoveryYear: "1996"),
-        Planet(planetId: 2, planetName: "Jeremy's World", hostname: "The imaginaton", discoveryYear: "2022")
+        Planet(planetId: 1, planetName: "Wasp-96b", hostname: "Wasp Nest", discoveryYear: 1996),
+        Planet(planetId: 2, planetName: "Jeremy's World", hostname: "The imaginaton", discoveryYear: 2022)
     ]
 }

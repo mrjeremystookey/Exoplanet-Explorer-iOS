@@ -16,7 +16,7 @@ class JsonPlanetMapper {
                 planetId: Int.init(planet.0.description)!,
                 planetName: planet.1["pl_name"].stringValue,
                 hostname: planet.1["hostname"].stringValue,
-                discoveryYear: planet.1["disc_year"].stringValue,
+                discoveryYear: planet.1["disc_year"].intValue,
                 planetaryOrbitPeriod: planet.1["pl_orbper"].doubleValue
             )
             planetList.append(planet)

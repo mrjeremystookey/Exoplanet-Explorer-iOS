@@ -2,16 +2,19 @@ import SwiftUI
 
 struct PlanetListView: View {
     
-    @StateObject var viewModel = PlanetListViewModel()
 
-    let planets: [Planet]
+//    @FetchRequest(sortDescriptors: []) var coreDataPlanets: FetchedResults<PlanetEntity>
+    
+    
+    @StateObject private var viewModel = PlanetListViewModel()
+    
     var body: some View {
         ZStack {
             if viewModel.isRefreshing {
                 ProgressView()
             } else {
                 List{
-                    ForEach(planets, id: \.planetName) { planet in
+                    ForEach(viewModel.planets, id: \.planetName) { planet in
                         NavigationLink(destination: PlanetDetailsView(planet: planet)) {
                             PlanetCardView(planet: planet)
                                 .padding(4)
@@ -38,7 +41,7 @@ struct PlanetListView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            PlanetListView(planets: Planet.sampleData)
+            PlanetListView()
         }
     }
 }
